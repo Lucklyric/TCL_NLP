@@ -1,0 +1,2244 @@
+[
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "the area"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "best price"
+                }
+            ], 
+            "query": "locate the best price parking in the area"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }
+            ], 
+            "query": "show nearest public parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }
+            ], 
+            "query": "where is nearest parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "walking distance"
+                }
+            ], 
+            "query": "find me parking place within walking distance"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "three"
+                }
+            ], 
+            "query": "how do i get to parking within three blocks"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "feet"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "1000"
+                }
+            ], 
+            "query": "show me all parking within 1000 feet"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "3"
+                }
+            ], 
+            "query": "list parking options within 3 blocks"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "nearby"
+                }
+            ], 
+            "query": "is there any 24 hour parking nearby"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheap"
+                }
+            ], 
+            "query": "find me cheap parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }
+            ], 
+            "query": "get me the cheapest parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "near me"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "flat rate"
+                }
+            ], 
+            "query": "flat rate parking areas near me"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "find the closest free parking option"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "near me"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "is there any parking near me that is free of charge"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "close to me"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "is there any free parking close to me"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }
+            ], 
+            "query": "where is the closest place that offers overnight parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "is there a place near my destination where parking is free"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "civic center"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "20"
+                }
+            ], 
+            "query": "i want parking under 20 at the civic center"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "mile"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "field"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "a quarter"
+                }
+            ], 
+            "query": "is there parking within a quarter mile of the field"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "madison square"
+                }
+            ], 
+            "query": "find parking places near madison square"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "airport"
+                }
+            ], 
+            "query": "locate parking near the airport"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "walking distance"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "airport"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }
+            ], 
+            "query": "what is the cheapest parking within walking distance to the airport"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "until 5 pm"
+                }, 
+                {
+                    "key": "Duration", 
+                    "literal": "all day"
+                }
+            ], 
+            "query": "i need to find a place that i can park all day until 5 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "mins"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "arena"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "5"
+                }
+            ], 
+            "query": "find me parking thats 5 mins away from the arena"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "bayfront"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "2"
+                }
+            ], 
+            "query": "find me parking within 2 blocks of bayfront"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "capitol area"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "lowest price"
+                }
+            ], 
+            "query": "i want the lowest price on parking in the capitol area"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "center city"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheap"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "find me cheap parking under 10 anywhere in center city"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "downtown"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "find me free parking near downtown"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "columbia airport"
+                }
+            ], 
+            "query": "locate parking near columbia airport"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "courthouse"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "six"
+                }
+            ], 
+            "query": "find the cheapest parking within six blocks of the courthouse"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "downtown"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "three"
+                }
+            ], 
+            "query": "get me a parking spot three blocks from downtown"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "downtown"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "from 11 am to 1 pm"
+                }
+            ], 
+            "query": "find me parking downtown thats available from 11 am to 1 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "downtown oakland"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "get me a parking spot for under 10 in downtown oakland"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "downtwon seattle"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "midnight to 6 am"
+                }
+            ], 
+            "query": "find me parking near downtown seattle for midnight to 6 am"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "moscone center"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "now"
+                }
+            ], 
+            "query": "is there parking near the moscone center right now"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "mall"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "two"
+                }
+            ], 
+            "query": "i want to park within two blocks of the mall"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "where i am"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "now"
+                }
+            ], 
+            "query": "where can i park that is closest to where i am now"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "mall"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "does the mall have free parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "walking distance"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "train station"
+                }
+            ], 
+            "query": "can i park within walking distance of the train station"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "midnight to noon"
+                }
+            ], 
+            "query": "where can i park from midnight to noon"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "near me"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "now"
+                }
+            ], 
+            "query": "can i have a list of the cheapest parking locations near me right now"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }
+            ], 
+            "query": "take me to the closest parking spot"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "panthers stadium"
+                }
+            ], 
+            "query": "find parking around the panthers stadium"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "school"
+                }
+            ], 
+            "query": "get me parking near school"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "school"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }
+            ], 
+            "query": "find cheapest parking spots near school"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "train station"
+                }
+            ], 
+            "query": "get me one parking spot near the train station"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "short distance"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "super market"
+                }
+            ], 
+            "query": "are you find a parking area near super market with short distance"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "at 5 am thursday"
+                }
+            ], 
+            "query": "are there parking places available at 5 am thursday"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "walking distance"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "wrigley field"
+                }
+            ], 
+            "query": "i need to park within walking distance of wrigley field"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "nearby"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "from 10 am to noon"
+                }
+            ], 
+            "query": "is there any parking nearby that is available from 10 am to noon"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "from 12 pm to 2 pm"
+                }
+            ], 
+            "query": "where can i park from 12 pm to 2 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "between 11 am to 7 pm"
+                }
+            ], 
+            "query": "find me a place to park between 11 am to 7 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "from 9 am to 5 pm"
+                }
+            ], 
+            "query": "where is a good spot to park from 9 am to 5 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Calendarx", 
+                    "literal": "after 9 pm"
+                }
+            ], 
+            "query": "where to park after 9 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }, 
+                {
+                    "key": "Duration", 
+                    "literal": "an hour"
+                }
+            ], 
+            "query": "is there a free place to park for an hour"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "here"
+                }
+            ], 
+            "query": "i need a parking space close to here"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }
+            ], 
+            "query": "how far is the closest parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Duration", 
+                    "literal": "15 minutes"
+                }
+            ], 
+            "query": "please find me where i can park for 15 minutes"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Duration", 
+                    "literal": "2 hours"
+                }
+            ], 
+            "query": "i need to park for 2 hours"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "current location"
+                }
+            ], 
+            "query": "where is the closest available parking from my current location"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "feet"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "100"
+                }
+            ], 
+            "query": "parking within 100 feet of my destination"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "search for a parking place under 10"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "my apartment"
+                }
+            ], 
+            "query": "find a parking spot near my apartment in the city"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "near me"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "is there a place that offers free overnight parking near me"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "my location"
+                }
+            ], 
+            "query": "find me the closest parking spot near my location"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }
+            ], 
+            "query": "show me on a map where the closest parking space is"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "this area"
+                }
+            ], 
+            "query": "where can i park in this area"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Duration", 
+                    "literal": "all day"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "find me all day parking that will be less than 10 dollars"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Amount", 
+                    "literal": "20"
+                }
+            ], 
+            "query": "locate parking for less than 20 bucks"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Amount", 
+                    "literal": "5"
+                }
+            ], 
+            "query": "where can i find parking under 5"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Amount", 
+                    "literal": "5"
+                }
+            ], 
+            "query": "find a parking place that is no more than 5"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "tell me where to find parking under 10"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }
+            ], 
+            "query": "direct me to the nearest parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "what are the closest parking places under 10"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "4"
+                }
+            ], 
+            "query": "i want a garage within 4 blocks of the destination"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garages"
+                }
+            ], 
+            "query": "are there any parking garages near my destination"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "nearby"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garages"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "50"
+                }
+            ], 
+            "query": "list the nearby parking garages with prices under 50"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }
+            ], 
+            "query": "where is the nearest overnight parking garage"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "walking distance"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "mall"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garages"
+                }
+            ], 
+            "query": "what garages are in walking distance of the mall"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "2"
+                }
+            ], 
+            "query": "find me a parking garage within 2 blocks"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }
+            ], 
+            "query": "please find a parking garage that is close to my destination"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "mile"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "half"
+                }
+            ], 
+            "query": "is there a parking garage within half a mile of me"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "broadway and 53rd"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lot"
+                }
+            ], 
+            "query": "find nearest lot to broadway and 53rd"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "mile"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "one"
+                }
+            ], 
+            "query": "direct me to the cheapest parking garage in a one mile radius"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "here"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }
+            ], 
+            "query": "what is the cheapest parking garage around here"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage valet"
+                }
+            ], 
+            "query": "closest valet parking garage"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lots"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "2"
+                }
+            ], 
+            "query": "list the parking lots are within 2 blocks"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "stadium"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "reserve"
+                }
+            ], 
+            "query": "please help me reserve a space at a lot near the stadium"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "newark airport"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lot"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }
+            ], 
+            "query": "bring me to cheapest parking lot at newark airport"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "km"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lot"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "2"
+                }
+            ], 
+            "query": "find me parking lot within 2 km"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "minute walk"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lot"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "5"
+                }
+            ], 
+            "query": "is there a parking lot within 5 minute walk from my destination"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lot"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "free"
+                }
+            ], 
+            "query": "bring me to a free parking lot"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "here"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lot"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "lowest price"
+                }
+            ], 
+            "query": "give me directions to the lowest price parking lot near here"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "metered"
+                }
+            ], 
+            "query": "please find me metered parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "nearby"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lots"
+                }
+            ], 
+            "query": "are there any parking lots nearby"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "lots"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "flat fee"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "discover flat fee parking lots for under 10"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "metered"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "10 am to 2 pm"
+                }
+            ], 
+            "query": "metered parking 10 am to 2 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "off street"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "from 5 pm to 6 pm"
+                }
+            ], 
+            "query": "off street parking from 5 pm to 6 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "meter"
+                }
+            ], 
+            "query": "find meter parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "train station"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "metered"
+                }
+            ], 
+            "query": "is there metered parking at the train station"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "park"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "reserve"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "at 6 pm to 10 pm"
+                }
+            ], 
+            "query": "reserve a parking lot at 6 pm to 10 pm near park"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "meters"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "after 11 pm"
+                }
+            ], 
+            "query": "are there meters running after 11 pm"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "meter"
+                }
+            ], 
+            "query": "find closest parking meter"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "metered"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "per hour"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "4"
+                }
+            ], 
+            "query": "locate metered parking spots that are less than 4 per hour"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "metered street"
+                }
+            ], 
+            "query": "find metered parking on this street"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "my office"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "reserve"
+                }
+            ], 
+            "query": "reserve a parking lot near my office"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "valet"
+                }, 
+                {
+                    "key": "Amount", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "valet park under 10"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "golden barbeque on fourth street in cincinnati"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "is street parking available near the golden barbeque on fourth street in cincinnati"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "ihop"
+                }
+            ], 
+            "query": "find a parking spot at ihop"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "miles"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "valet"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "3"
+                }
+            ], 
+            "query": "locate valet parking within 3 miles"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "nearby"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "reserve"
+                }
+            ], 
+            "query": "find a reserve parking lot nearby"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "valet"
+                }
+            ], 
+            "query": "find me the nearest valet parking for my destination"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "the corner of 12th and spruce street"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "reserve "
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "3 pm"
+                }
+            ], 
+            "query": "reserve a parking spot for 3 pm near the corner of 12th and spruce street"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "downtown"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "find out the nearest street parking to downtown"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "3rd street"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "find on street parking near 3rd street"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "e 9th street"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "can you find me parking on e 9th street"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "closeby"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "list the street parking closeby"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "minutes"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "here"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "valet"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "10"
+                }
+            ], 
+            "query": "locate valet parking within 10 minutes of here"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "destination"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "from 830 am to 845 am"
+                }
+            ], 
+            "query": "can you search for street near my destination from 830 am to 845 am"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "blocks"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "two"
+                }
+            ], 
+            "query": "show me street parking within two blocks"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }, 
+                {
+                    "key": "Duration", 
+                    "literal": "over the weekend"
+                }
+            ], 
+            "query": "where can i park my car on the street over the weekend"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "nearest"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "can you find me nearest street parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Unit", 
+                    "literal": "block"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "my apartment"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }, 
+                {
+                    "key": "Distance_Number", 
+                    "literal": "a"
+                }
+            ], 
+            "query": "im looking for street parking within a block of my apartment"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "near my area"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "find me a street side parking near my area"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "street"
+                }
+            ], 
+            "query": "where is the closest on street parking"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "valet"
+                }, 
+                {
+                    "key": "Price_Reference", 
+                    "literal": "cheapest"
+                }
+            ], 
+            "query": "find the cheapest valet parking service"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "closest"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "mall"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }
+            ], 
+            "query": "look for a parking garage closest to the mall"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location_Reference", 
+                    "literal": "nearby"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "until 5 am"
+                }
+            ], 
+            "query": "is there a parking garage nearby that is open until 5 am"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Distance_Reference", 
+                    "literal": "walking distance"
+                }, 
+                {
+                    "key": "Location", 
+                    "literal": "school"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }
+            ], 
+            "query": "can you find a garage within walking distance of the school"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }, 
+                {
+                    "key": "Calendarx", 
+                    "literal": "after 2 am"
+                }
+            ], 
+            "query": "locate parking garage open after 2 am"
+        }
+    }, 
+    {
+        "ground_truth": {
+            "Domain": "Parking", 
+            "Intention": "Parking_Search", 
+            "entities": [
+                {
+                    "key": "Location", 
+                    "literal": "supermarket"
+                }, 
+                {
+                    "key": "Location_Reference", 
+                    "literal": "our area"
+                }, 
+                {
+                    "key": "Parking_Type", 
+                    "literal": "garage"
+                }
+            ], 
+            "query": "find me a garage parking near supermarket in our area"
+        }
+    }
+]
