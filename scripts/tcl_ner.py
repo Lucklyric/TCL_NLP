@@ -33,7 +33,7 @@ tf.app.flags.DEFINE_integer("steps_per_checkpoint", 200,
                             "How many training steps to do per checkpoint.")
 tf.app.flags.DEFINE_boolean("decode", False,
                             "Set to True for interactive decoding.")
-tf.app.flags.DEFINE_boolean("self_test", False,
+tf.app.flags.DEFINE_boolean("self_test", True,
                             "Run a self-test if this is set to True.")
 tf.app.flags.DEFINE_boolean("use_fp16", False,
                             "Train using fp16 instead of fp32.")
@@ -63,6 +63,18 @@ def read_data(source_path, target_path, max_size=None):
                         break
                 source, target = source_file.readline(), target_file.readline()
     return data_set
+
+
+def read_eval_data(source_path, target_path):
+    data_eval = ([], [])
+    with tf.gfile.GFile(source_path, mode="r") as source_file:
+        with tf.gfile.GFile(target_path, mode="r") as target_file:
+            source, target = source_file.readline(), target_file.readline()
+            while source and target:
+                data_eval[0].append([int(x) for x in source.split()])
+                data_eval[1].append([int(x) for x in target.split()])
+                source, target = source_file.readline(), target_file.readline()
+    return data_eval
 
 
 def create_model(session, forward_only):
@@ -145,7 +157,7 @@ def train():
                 # Run testing and print perplexity.
                 for bucket_id in xrange(len(_buckets)):
                     if len(test_set[bucket_id]) == 0:
-                        print(" eval:emptyu bucket %d" % (bucket_id))
+                        print(" eval:empty bucket %d" % (bucket_id))
                         continue
                     encoder_inputs, decoder_inputs, target_weights = model.get_batch(
                         test_set, bucket_id)
@@ -155,6 +167,48 @@ def train():
                         "inf")
                     print("  eval: bucket %d perplexity %.2f" % (bucket_id, eval_ppx))
                 sys.stdout.flush()
+
+
+def custom_accuracy_eval():
+    in_train, ner_train, in_test, ner_test, _, _ = data_util.prepare_tcl_data(FLAGS.data_dir, FLAGS.vocab_dir)
+    with tf.Session() as sess:
+        model = create_model(sess, True)
+        model.batch_size = 1
+
+        eval_set = read_eval_data(in_test, ner_test)
+        print(eval_set)
+        counter = 0
+        words_counter = 0
+        words_error_counter = 0
+        for index in range(len(eval_set[0])):
+            token_ids = eval_set[0][index]
+            ground_truth_ids = eval_set[1][index]
+            bucket_id = len(_buckets) - 1
+            for i, bucket in enumerate(_buckets):
+                if bucket[0] >= len(token_ids):
+                    bucket_id = i
+                    break
+
+            # Get a 1-element batch to feed the sentence to the model.
+            encoder_inputs, decoder_inputs, target_weights = model.get_batch(
+                {bucket_id: [(token_ids, [])]}, bucket_id)
+            # Get output logits for the sentence.
+            _, _, output_logits = model.step(sess, encoder_inputs, decoder_inputs,
+                                             target_weights, bucket_id, True)
+            # This is a greedy decoder - outputs are just argmaxes of output_logits.
+            outputs = [int(np.argmax(logit, axis=1)) for logit in output_logits]
+            # If there is an EOS symbol in outputs, cut them at that point.
+            if data_util.EOS_ID in outputs:
+                outputs = outputs[:outputs.index(data_util.EOS_ID)]
+
+            counter += 1
+            words_counter += len(outputs)
+            words_error_counter += len([x for x, y in zip(outputs, ground_truth_ids) if x != y])
+
+            print("processing %d line" % counter)
+
+    print("%d words with %d accurate tagging, final accuracy %.2f" % (words_counter,words_counter-words_error_counter,\
+                                                                      1 - words_error_counter / words_counter))
 
 
 def decode():
@@ -167,7 +221,7 @@ def decode():
         in_vocab_path = os.path.join(FLAGS.vocab_dir,
                                      "vocab.in")
         ner_vocab_path = os.path.join(FLAGS.vocab_dir,
-                                     "vocab.ner")
+                                      "vocab.ner")
         en_vocab, _ = data_util.initialize_vocabulary(in_vocab_path)
         _, rev_fr_vocab = data_util.initialize_vocabulary(ner_vocab_path)
 
@@ -207,10 +261,12 @@ def decode():
 
 def main(_):
     if FLAGS.self_test:
-        pass
+        print("=================self_test==================")
+        custom_accuracy_eval()
     elif FLAGS.decode:
         decode()
     else:
+        print("===============train================")
         train()
 
 
