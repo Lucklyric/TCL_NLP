@@ -180,9 +180,7 @@ def custom_accuracy_eval():
         counter = 0
         words_counter = 0
         words_error_counter = 0
-        for index in range(len(eval_set[0])):
-            token_ids = eval_set[0][index]
-            ground_truth_ids = eval_set[1][index]
+        for token_ids,ground_truth_ids in zip(eval_set[0], eval_set[1]):
             bucket_id = len(_buckets) - 1
             for i, bucket in enumerate(_buckets):
                 if bucket[0] >= len(token_ids):
@@ -207,8 +205,9 @@ def custom_accuracy_eval():
 
             print("processing %d line" % counter)
 
-    print("%d words with %d accurate tagging, final accuracy %.2f" % (words_counter,words_counter-words_error_counter,\
-                                                                      1 - words_error_counter / words_counter))
+    print(
+        "%d words with %d accurate tagging, final accuracy %.2f" % (words_counter, words_counter - words_error_counter, \
+                                                                    1 - words_error_counter / words_counter))
 
 
 def decode():
