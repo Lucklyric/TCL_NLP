@@ -169,18 +169,22 @@ def train():
                 sys.stdout.flush()
 
 
-def custom_accuracy_eval():
+def custom_accuracy_eval(is_training_data=False, target_token=6):
     in_train, ner_train, in_test, ner_test, _, _ = data_util.prepare_tcl_data(FLAGS.data_dir, FLAGS.vocab_dir)
+    if is_training_data:
+        eval_set = read_eval_data(in_train, ner_train)
+    else:
+        eval_set = read_eval_data(in_test, ner_test)
     with tf.Session() as sess:
         model = create_model(sess, True)
         model.batch_size = 1
 
-        eval_set = read_eval_data(in_test, ner_test)
         print(eval_set)
-        counter = 0
-        words_counter = 0
-        words_error_counter = 0
-        for token_ids,ground_truth_ids in zip(eval_set[0], eval_set[1]):
+        sentence_counter = 0
+        false_sentence_counter = 0
+        for token_ids, ground_truth_ids in zip(eval_set[0], eval_set[1]):
+            sentence_counter += 1
+
             bucket_id = len(_buckets) - 1
             for i, bucket in enumerate(_buckets):
                 if bucket[0] >= len(token_ids):
@@ -199,15 +203,36 @@ def custom_accuracy_eval():
             if data_util.EOS_ID in outputs:
                 outputs = outputs[:outputs.index(data_util.EOS_ID)]
 
-            counter += 1
-            words_counter += len(outputs)
-            words_error_counter += len([x for x, y in zip(outputs, ground_truth_ids) if x != y])
+            # For general accuracy
+            # words_error_counter += len([x for x, y in zip(outputs, ground_truth_ids) if x != y])
 
-            print("processing %d line" % counter)
+            # For only location accuracy evaluation:
+            pre_index = 0
+            if target_token not in ground_truth_ids:
+                sentence_counter -= 1
+                continue
+            if len(outputs) != len(ground_truth_ids):
+                false_sentence_counter += 1
+            else:
+                while pre_index < len(ground_truth_ids):
+                    if ground_truth_ids[pre_index] == target_token:
+                        if outputs[pre_index] != target_token:
+                            false_sentence_counter += 1
+                            break
+                        else:
+                            pass
+                    elif outputs[pre_index] == target_token:
+                        false_sentence_counter += 1
+                        break
+                    pre_index += 1
+
+            print("processing %d line" % sentence_counter)
 
     print(
-        "%d words with %d accurate tagging, final accuracy %.2f" % (words_counter, words_counter - words_error_counter, \
-                                                                    1 - words_error_counter / words_counter))
+        "%d sentences with %d accurate tagging, final accuracy %.2f" % (sentence_counter,
+                                                                        sentence_counter - false_sentence_counter,
+                                                                        1 - false_sentence_counter / sentence_counter))
+    return 1 - false_sentence_counter/sentence_counter
 
 
 def decode():
@@ -261,7 +286,7 @@ def decode():
 def main(_):
     if FLAGS.self_test:
         print("=================self_test==================")
-        custom_accuracy_eval()
+        custom_accuracy_eval(is_training_data=True)
     elif FLAGS.decode:
         decode()
     else:
